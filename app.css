@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --text-color: #fff;
+  --card-bg: hsl(332, 51%, 86%);
+  --card-border: 1px solid black;
+  --roundness: 15px;
+}
+.container {
+  width: 40vw;
+  height: 40vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: var(--roundness);
+}
