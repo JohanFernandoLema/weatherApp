@@ -15,7 +15,7 @@ body {
 }
 .container {
   width: 40vw;
-  height: 40vh;
+  height: auto;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -36,13 +36,16 @@ body {
   width: 40%;
   border-radius: var(--roundness);
 }
-button {
+.first button {
   height: 50px;
   width: 50px;
   border-radius: var(--roundness);
   outline: none;
   border: none;
   cursor: pointer;
+}
+.first h1 {
+  margin: 1rem 0 0.1rem 0;
 }
 
 .infoContainer {
@@ -52,4 +55,11 @@ button {
 }
 .second p {
   font-size: 2rem;
+  margin: 1rem 0;
+  position: relative;
+  bottom: 30px;
+}
+.third img {
+  position: relative;
+  bottom: 45px;
 }
