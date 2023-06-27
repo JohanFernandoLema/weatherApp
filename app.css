@@ -8,6 +8,10 @@
   --card-bg: hsl(332, 51%, 86%);
   --card-border: 1px solid black;
   --roundness: 15px;
+  --letter-font: 'poppins';
+}
+body {
+  font-family: 'poppins';
 }
 .container {
   width: 40vw;
@@ -35,4 +39,8 @@
 .infoContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.second p {
+  font-size: 2rem;
 }
