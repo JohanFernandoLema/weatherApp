@@ -13,8 +13,12 @@ async function getWeather() {
       console.log(data)
       // Get weather info
       document.querySelector('.city').innerHTML = data.city.name
-      document.querySelector('.temp').innerHTML = data.list[0].main.temp
-      document.querySelector('.wind').innerHTML = data.list[0].wind.speed
+      document.querySelector('.temp').innerHTML =
+        Math.floor(data.list[0].main.temp) + ' °F'
+      document.querySelector('.wind').innerHTML =
+        data.list[0].wind.speed + ' Km/h'
+      document.querySelector('.humidity').innerHTML =
+        data.list[0].main.humidity + ' %'
     })
     .catch((err) => console.log(err))
 }
