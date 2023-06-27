@@ -21,17 +21,17 @@ async function getWeather() {
       document.querySelector('.humidity').innerHTML =
         data.list[0].main.humidity + ' %'
 
-      if (data.weather[0].main == 'Clouds') {
+      if (data.list[0].weather[0].main == 'Clouds') {
         weatherIcon.src = './Assets/images/clouds.png'
-      } else if (data.weather[0].main == 'Clear') {
+      } else if (data.list[0].weather[0].main == 'Clear') {
         weatherIcon.src = './Assets/images/clear.png'
-      } else if (data.weather[0].main == 'clouds') {
+      } else if (data.list[0].weather[0].main == 'clouds') {
         weatherIcon.src = './Assets/images/clouds.png'
-      } else if (data.weather[0].main == 'Rain') {
+      } else if (data.list[0].weather[0].main == 'Rain') {
         weatherIcon.src = './Assets/images/rain.png'
-      } else if (data.weather[0].main == 'Drizzle') {
+      } else if (data.list[0].weather[0].main == 'Drizzle') {
         weatherIcon.src = './Assets/images/drizzle.png'
-      } else if (data.weather[0].main == 'Mist') {
+      } else if (data.list[0].weather[0].main == 'Mist') {
         weatherIcon.src = './Assets/images/mist.png'
       }
     })
