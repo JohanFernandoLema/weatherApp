@@ -33,9 +33,18 @@ body {
   padding-left: 10px;
   outline: none;
   border: none;
-  width: 50%;
+  width: 40%;
   border-radius: var(--roundness);
 }
+button {
+  height: 50px;
+  width: 50px;
+  border-radius: var(--roundness);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .infoContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
