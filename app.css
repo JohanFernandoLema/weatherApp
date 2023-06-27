@@ -20,3 +20,19 @@
   border: var(--card-border);
   border-radius: var(--roundness);
 }
+.first {
+  text-align: center;
+  margin: 3rem 0;
+}
+.first input {
+  height: 50px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  width: 50%;
+  border-radius: var(--roundness);
+}
+.infoContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
