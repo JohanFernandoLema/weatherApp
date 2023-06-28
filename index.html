@@ -15,22 +15,23 @@
   <body>
     <div class="container">
       <div class="first">
-        <input
-          type="text"
-          name="cityName"
-          class="cityInput"
-          placeholder="Input the city name"
-        />
-        <button class="weatherBtn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+        <label for="city" class="cityContainer"
+          ><input
+            type="text"
+            name="cityName"
+            class="cityInput"
+            placeholder="Input the city name" />
+          <button class="weatherBtn">
+            <i class="fa-solid fa-magnifying-glass"></i></button
+        ></label>
+
         <h1 class="city"></h1>
       </div>
       <div class="infoContainer">
         <div class="second">
           <p class="temp"></p>
-          <p class="wind"></p>
           <p class="humidity"></p>
+          <p class="wind"></p>
         </div>
         <div class="third">
           <img src="" class="weather-icon" />
