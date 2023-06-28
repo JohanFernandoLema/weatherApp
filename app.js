@@ -15,11 +15,18 @@ async function getWeather() {
       // Get weather info
       document.querySelector('.city').innerHTML = data.city.name
       document.querySelector('.temp').innerHTML =
-        Math.floor(data.list[0].main.temp) + ' °F'
+        '<h6 class="properties">Temperature</h6>' +
+        Math.floor(data.list[0].main.temp) +
+        ' °F'
       document.querySelector('.wind').innerHTML =
-        data.list[0].wind.speed + ' Km/h'
+        '<h6 class="properties">Wind Speed</h6>' +
+        '<i class="fa-solid fa-wind"></i> ' +
+        data.list[0].wind.speed +
+        ' Km/h'
       document.querySelector('.humidity').innerHTML =
-        data.list[0].main.humidity + ' %'
+        '<h6 class="properties">Humidity</h6>' +
+        data.list[0].main.humidity +
+        ' %'
 
       if (data.list[0].weather[0].main == 'Clouds') {
         weatherIcon.src = './Assets/images/clouds.png'
