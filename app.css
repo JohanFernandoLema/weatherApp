@@ -5,26 +5,31 @@
 }
 :root {
   --text-color: #fff;
-  --card-bg: hsl(332, 51%, 86%);
-  --card-border: 1px solid black;
+  --card-bg: hsla(192, 45%, 2%, 0.8);
+  --card-border: 2px solid black;
   --roundness: 15px;
   --letter-font: 'poppins';
 }
 body {
   font-family: 'poppins';
-  background-image: url('./Assets/images/buildings.jpg');
+  background-image: url('./Assets/images/background.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   width: 40vw;
   height: auto;
   position: absolute;
-  top: 40%;
+  top: 47%;
+  color: var(--text-color);
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--card-bg);
   border: var(--card-border);
   border-radius: var(--roundness);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .first {
   text-align: center;
