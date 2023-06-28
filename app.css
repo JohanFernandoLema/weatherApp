@@ -12,6 +12,8 @@
 }
 body {
   font-family: 'poppins';
+  background-image: url('./Assets/images/buildings.jpg');
+  background-repeat: no-repeat;
 }
 .container {
   width: 40vw;
@@ -61,5 +63,5 @@ body {
 }
 .third img {
   position: relative;
-  bottom: 45px;
+  bottom: 25px;
 }
