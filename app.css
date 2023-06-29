@@ -67,6 +67,16 @@ body {
   position: relative;
   bottom: 30px;
 }
+.third {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.show {
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+}
 .third img {
   position: relative;
   bottom: 30px;
